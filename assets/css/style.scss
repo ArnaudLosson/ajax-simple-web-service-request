@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(180deg, rgba(219,233,8,1) 33%, rgba(255,138,7,1) 66%);
+    min-height: 100vh;
+    color: black;
+    text-align: center;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    .images {
+        grid-area: 1 / 1 / 2 / 2; 
+        height: 300px;
+        border: 10px outset white;
+        align-content: center;
+    } 
+    .quote { 
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 40px;
+        width: 500px;
+        text-align: left;
+        align-content: center;
+    }
+}
+
+p {
+    font-size: 80px;
+}
+
+hr {
+    width: 300px;
+    height: 2px;
+    background-color: #ce0909;
+    color: transparent;
+    margin-bottom: 100px;
+    margin-top: -20px;
+}
